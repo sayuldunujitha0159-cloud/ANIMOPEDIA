@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#bdeefa" />
-  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#bfeefa" />
   <meta name="description" content="ANIMOPEDIA is a playful, scientifically grounded animal encyclopedia for curious explorers." />
   <link rel="canonical" href="https://sayuldunujitha0159-cloud.github.io/ANIMOPEDIA/" />
   <title>ANIMOPEDIA — Explore the animal kingdom</title>
@@ -14,40 +13,71 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="page-shell">
-    <aside class="side-panel" id="sidePanel" aria-label="ANIMOPEDIA navigation">
-      <div class="side-brand"><span class="paw-logo">🐾</span><span>ANIMO<strong>PEDIA</strong></span></div>
-      <button class="close-menu" id="closeMenu" aria-label="Close menu">×</button>
-      <p class="menu-label">Explore</p>
-      <nav class="side-nav"><a class="active" href="#top">⌂ <span>Home</span></a><a href="#explore">⌕ <span>Explore animals</span></a><a href="#groups">◈ <span>Categories</span></a><a href="#facts">✦ <span>Animal facts</span></a><a href="#featured">★ <span>Featured</span></a><a href="#about">✧ <span>About ANIMOPEDIA</span></a></nav>
-      <div class="side-note"><span>✦</span><strong>Stay curious!</strong><small>There is always more life to discover.</small></div>
-    </aside>
+  <div class="site-frame">
+    <div class="top-blob" aria-hidden="true"></div>
+    <header class="brand-header">
+      <a class="brand" href="#top" aria-label="ANIMOPEDIA home"><span class="paw-logo">🐾</span><span>ANIMO<strong>PEDIA</strong></span></a>
+      <p>Explore. Learn. Wonder.</p>
+      <button class="mobile-menu-button" id="openMenu" aria-label="Open navigation">☰</button>
+    </header>
 
-    <div class="content-wrap">
-      <header class="topbar"><button class="menu-toggle" id="openMenu" aria-label="Open menu">☰</button><a class="mobile-brand" href="#top"><span>🐾</span> ANIMO<strong>PEDIA</strong></a><button class="ani-link" id="openAni" type="button"><span>✦</span> Ask ANI</button></header>
-      <main id="top">
-        <section class="welcome-hero" aria-labelledby="hero-title">
-          <div class="hero-blue-shape"></div><div class="hero-copy"><p class="eyebrow"><span>🐾</span> Welcome, explorer!</p><h1 id="hero-title">The animal world<br /><em>starts here.</em></h1><p class="hero-text">Search, learn and wander through a colorful collection of animals — made for curious minds.</p><form class="hero-search" id="heroSearch"><label class="sr-only" for="heroSearchInput">Search for an animal</label><span class="search-icon">⌕</span><input id="heroSearchInput" type="search" placeholder="Search for an animal..." autocomplete="off" /><button type="submit">Search <span>→</span></button></form><div class="search-hints"><span>Popular:</span><button type="button" data-search="Elephant">Elephant</button><button type="button" data-search="Arctic">Arctic</button><button type="button" data-search="Birds">Birds</button></div></div><div class="hero-illustration" aria-label="Friendly illustrated tiger"><div class="cloud cloud-a">☁</div><div class="cloud cloud-b">☁</div><div class="blob blob-yellow"></div><div class="hero-animal">🐯</div><div class="sprout">❋</div><div class="speech-bubble">Let’s explore!</div></div>
+    <div class="layout">
+      <aside class="sidebar" id="sidePanel" aria-label="Main navigation">
+        <button class="close-menu" id="closeMenu" aria-label="Close navigation">×</button>
+        <p class="menu-kicker">Your adventure</p>
+        <nav class="side-nav">
+          <a class="active" href="#top">⌂ <span>Home</span></a>
+          <a href="#featured">★ <span>Featured animals</span></a>
+          <a href="#explore">⌕ <span>Explore</span></a>
+          <a href="#groups">◈ <span>Categories</span></a>
+          <a href="#facts">✦ <span>Animal facts</span></a>
+          <a href="#museum">⌛ <span>Evolution Museum</span></a>
+          <a href="#about">✧ <span>ANI guide</span></a>
+        </nav>
+        <div class="sidebar-note"><span>🐾</span><strong>Keep wondering.</strong><small>Every animal has a story worth discovering.</small></div>
+      </aside>
+
+      <main class="main-content" id="top">
+        <section class="search-stage" aria-labelledby="hero-title">
+          <div class="search-copy">
+            <p class="eyebrow">🐾 Welcome, explorer!</p>
+            <h1 id="hero-title">The animal world<br /><em>starts here.</em></h1>
+            <p class="hero-text">Search for a creature, follow a clue, and explore the amazing world of animals.</p>
+            <form class="hero-search" id="heroSearch">
+              <label class="sr-only" for="heroSearchInput">Search for an animal</label>
+              <span class="search-icon">⌕</span>
+              <input id="heroSearchInput" type="search" placeholder="Search for an animal..." autocomplete="off" />
+              <button type="submit">Search <span>→</span></button>
+            </form>
+            <div class="search-hints"><span>Try:</span><button type="button" data-search="Elephant">Elephant</button><button type="button" data-search="Arctic">Arctic</button><button type="button" data-search="Birds">Birds</button></div>
+          </div>
+          <div class="hero-scene" aria-label="Decorative illustration of a friendly tiger">
+            <div class="scene-sun"></div><div class="scene-cloud cloud-one">☁</div><div class="scene-cloud cloud-two">☁</div><div class="scene-animal">🐯</div><div class="scene-leaf">❋</div><div class="scene-bubble">Let’s explore!</div>
+          </div>
         </section>
 
-        <section class="welcome-strip"><div><strong>12</strong><span>starter guides</span></div><div><strong>6</strong><span>animal groups</span></div><div><strong>∞</strong><span>new things to learn</span></div><p>Every creature has a story. <span>✦</span></p></section>
+        <section class="stat-ribbon" aria-label="ANIMOPEDIA highlights"><div><strong>12</strong><span>starter guides</span></div><div><strong>6</strong><span>animal groups</span></div><div><strong>∞</strong><span>things to learn</span></div><p>Curiosity lives here <b>✦</b></p></section>
 
-        <section class="section-block" id="featured" aria-labelledby="featured-title"><div class="section-title"><div><p class="eyebrow">A few friends to meet</p><h2 id="featured-title">Featured animals</h2></div><a class="text-link" href="#explore">See all animals <span>→</span></a></div><div class="animal-grid featured-grid" id="animalGrid" aria-live="polite"></div><p class="empty-state" id="emptyState" hidden>No animals found. Try a different search.</p></section>
+        <section class="content-section" id="featured" aria-labelledby="featured-title"><div class="section-heading"><div><p class="eyebrow">A few friends to meet</p><h2 id="featured-title">Featured animals</h2></div><a class="section-link" href="#explore">See the collection →</a></div><div class="animal-grid" id="animalGrid" aria-live="polite"></div><p class="empty-state" id="emptyState" hidden>No animals found. Try another search.</p></section>
 
-        <section class="category-area" id="groups" aria-labelledby="groups-title"><div class="section-title"><div><p class="eyebrow">Find your family</p><h2 id="groups-title">Explore by category</h2></div><p class="section-caption">Every branch of the animal kingdom has something surprising to teach us.</p></div><div class="group-grid" id="groupGrid"></div></section>
+        <section class="content-section categories" id="groups" aria-labelledby="groups-title"><div class="section-heading"><div><p class="eyebrow">Find your family</p><h2 id="groups-title">Explore by category</h2></div><p class="section-note">From feathered flyers to ocean giants, every branch has a surprise.</p></div><div class="group-grid" id="groupGrid"></div></section>
 
-        <section class="fact-card" id="facts"><div class="fact-icon">💡</div><div><p class="eyebrow">Did you know?</p><h2>Elephants can “hear” with their feet.</h2><p>They can detect low sounds and vibrations travelling through the ground, helping herds communicate across long distances.</p></div><span class="fact-decoration">✦</span></section>
+        <section class="fact-panel" id="facts" aria-labelledby="fact-title"><div class="fact-icon">💡</div><div><p class="eyebrow">Did you know?</p><h2 id="fact-title">Elephants can “hear” with their feet.</h2><p>They can detect low sounds and vibrations travelling through the ground, helping herds communicate across long distances.</p></div><span class="fact-star">✦</span></section>
 
-        <section class="section-block explore-block" id="explore" aria-labelledby="explore-title"><div class="section-title"><div><p class="eyebrow">Keep wandering</p><h2 id="explore-title">Explore every guide</h2></div><div class="toolbar"><div class="filter-pills" id="groupFilters" role="group" aria-label="Filter by group"><button class="active" data-group="All">All</button><button data-group="Mammals">Mammals</button><button data-group="Birds">Birds</button><button data-group="Reptiles">Reptiles</button><button data-group="Fish">Fish</button><button data-group="Invertebrates">Invertebrates</button></div><label class="sort-control">Sort <select id="sortSelect"><option value="featured">Featured</option><option value="name">A–Z</option><option value="lifespan">Lifespan</option></select></label></div></div><div class="animal-grid all-grid"></div></section>
+        <section class="content-section" id="explore" aria-labelledby="explore-title"><div class="section-heading explore-heading"><div><p class="eyebrow">Keep wandering</p><h2 id="explore-title">Explore every guide</h2></div><div class="toolbar"><div class="filter-pills" id="groupFilters" role="group" aria-label="Filter by group"><button class="active" data-group="All">All</button><button data-group="Mammals">Mammals</button><button data-group="Birds">Birds</button><button data-group="Reptiles">Reptiles</button><button data-group="Fish">Fish</button><button data-group="Invertebrates">Invertebrates</button></div><label class="sort-control">Sort <select id="sortSelect"><option value="featured">Featured</option><option value="name">A–Z</option><option value="lifespan">Lifespan</option></select></label></div></div><div class="animal-grid all-grid"></div></section>
 
-        <section class="ani-banner" id="about"><div class="ani-avatar">✦</div><div><p class="eyebrow">Coming into focus</p><h2>Meet ANI, your animal guide.</h2><p>ANI will grow into a clear, scientifically responsible assistant connected to ANIMOPEDIA's factual database. Ask questions, compare animals and learn at your own pace.</p></div><button class="outline-button" id="openAni2" type="button">Ask ANI <span>→</span></button></section>
+        <section class="museum-preview" id="museum" aria-labelledby="museum-title"><div class="museum-seal">✦</div><div class="museum-copy"><p class="museum-label">A special room inside ANIMOPEDIA</p><h2 id="museum-title">The Evolution Museum</h2><p class="museum-subtitle">Journey through the history of life.</p><p>Step into a parchment-colored exhibition of early life, fossils, ancient animals, extinction events, and the evolutionary relationships that connect modern species.</p><a class="museum-button" href="#museum-timeline">Enter the museum <span>→</span></a></div><div class="museum-sketch" aria-hidden="true"><span>𓆈</span><small>SPECIMEN<br />ARCHIVE</small></div></section>
+
+        <section class="museum-room" id="museum-timeline" aria-labelledby="timeline-title"><div class="museum-room-heading"><p class="museum-label">Exhibition I · Timeline of life</p><h2 id="timeline-title">A very long story</h2><p>These simplified milestones introduce established scientific evidence. New discoveries can refine our understanding over time.</p></div><div class="timeline"><article><span class="timeline-dot">1</span><small>~3.5 billion years ago</small><h3>Early life</h3><p>Simple single-celled life appeared in Earth’s ancient oceans.</p></article><article><span class="timeline-dot">2</span><small>~540 million years ago</small><h3>Life diversifies</h3><p>Many animal body plans became visible in the fossil record.</p></article><article><span class="timeline-dot">3</span><small>~230 million years ago</small><h3>Age of dinosaurs</h3><p>Dinosaurs became an important part of terrestrial ecosystems.</p></article><article><span class="timeline-dot">4</span><small>Today</small><h3>One connected tree</h3><p>Every living animal is part of the shared history of life.</p></article></div></section>
+
+        <section class="ani-banner" id="about"><div class="ani-avatar">✦</div><div><p class="eyebrow">Your future animal guide</p><h2>Ask ANI</h2><p>ANI will become a clear, scientifically responsible assistant connected to ANIMOPEDIA’s structured database. It will explain concepts, compare animals, and acknowledge uncertainty instead of making up facts.</p></div><button class="outline-button" id="openAni" type="button">Ask ANI <span>→</span></button></section>
       </main>
-      <footer class="site-footer"><span>🐾</span><strong>ANIMO<span>PEDIA</span></strong><p>Stay curious. Respect every living thing.</p><small>© 2026 ANIMOPEDIA</small></footer>
     </div>
+    <footer class="site-footer"><span>🐾</span><strong>ANIMO<span>PEDIA</span></strong><p>Stay curious. Respect every living thing.</p><small>© 2026 ANIMOPEDIA</small></footer>
   </div>
 
   <dialog class="animal-dialog" id="animalDialog"><button class="close-button" id="closeDialog" aria-label="Close animal profile">×</button><div id="dialogContent"></div></dialog>
-  <dialog class="ani-dialog" id="aniDialog"><button class="close-button" id="closeAni" aria-label="Close ANI">×</button><div class="ani-dialog-head"><div class="ani-avatar">✦</div><div><p class="eyebrow">ANIMOPEDIA assistant</p><h2>Ask ANI</h2></div></div><p class="ani-note">ANI's database connection is being prepared. For now, choose a question and explore the encyclopedia.</p><div class="suggestions"><button data-question="Tell me about elephants">Tell me about elephants</button><button data-question="What animals live in the Arctic?">What animals live in the Arctic?</button><button data-question="Which animals are birds?">Which animals are birds?</button></div><form class="ani-form" id="aniForm"><label class="sr-only" for="aniQuestion">Your question</label><input id="aniQuestion" placeholder="Ask about an animal..." /><button type="submit">Send</button></form><div class="ani-response" id="aniResponse" hidden></div></dialog>
+  <dialog class="ani-dialog" id="aniDialog"><button class="close-button" id="closeAni" aria-label="Close ANI">×</button><div class="ani-dialog-head"><div class="ani-avatar">✦</div><div><p class="eyebrow">ANIMOPEDIA assistant</p><h2>Ask ANI</h2></div></div><p class="ani-note">ANI’s database connection is being prepared. For now, choose a question and explore the encyclopedia.</p><div class="suggestions"><button data-question="Tell me about elephants">Tell me about elephants</button><button data-question="What animals live in the Arctic?">What animals live in the Arctic?</button><button data-question="Which animals are birds?">Which animals are birds?</button></div><form class="ani-form" id="aniForm"><label class="sr-only" for="aniQuestion">Your question</label><input id="aniQuestion" placeholder="Ask about an animal..." /><button type="submit">Send</button></form><div class="ani-response" id="aniResponse" hidden></div></dialog>
   <script src="app.js"></script>
 </body>
 </html>
