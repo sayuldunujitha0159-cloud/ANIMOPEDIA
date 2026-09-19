@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sayuldunujitha0159-cloud.github.io/ANIMOPEDIA/sitemap.xml
