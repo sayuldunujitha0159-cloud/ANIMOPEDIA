@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ANIMOPEDIA is a friendly, scientifically grounded guide to the animal kingdom." />
+  <title>ANIMOPEDIA — Explore the animal kingdom</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="ANIMOPEDIA home"><span class="brand-mark">🐾</span><span>ANIMO<span>PEDIA</span></span></a>
+    <nav class="main-nav" aria-label="Main navigation"><a href="#explore">Explore</a><a href="#groups">Groups</a><a href="#about">About</a></nav>
+    <button class="ani-link" id="openAni" type="button"><span>✦</span> Ask ANI</button>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span>🐾</span> Your curious guide to life on Earth</p>
+        <h1 id="hero-title">Meet the wild.<br /><em>Understand</em> the world.</h1>
+        <p class="hero-text">Explore friendly, factual guides to animals, their habitats, adaptations and the incredible ways they live.</p>
+        <form class="hero-search" id="heroSearch"><label class="sr-only" for="heroSearchInput">Search animals</label><span>⌕</span><input id="heroSearchInput" type="search" placeholder="Search an animal, habitat or group..." autocomplete="off" /><button type="submit">Explore</button></form>
+        <div class="search-hints"><span>Try:</span><button type="button" data-search="Arctic">Arctic</button><button type="button" data-search="Birds">Birds</button><button type="button" data-search="Endangered">Endangered</button></div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a tiger in nature"><div class="sun"></div><div class="leaf leaf-one">✦</div><div class="leaf leaf-two">❋</div><div class="animal-orb"><span>🐯</span></div><div class="art-label"><strong>Curiosity lives here.</strong><small>12 guides to start exploring</small></div></div>
+    </section>
+
+    <section class="quick-stats" aria-label="ANIMOPEDIA facts"><div><strong>12</strong><span>starter guides</span></div><div><strong>6</strong><span>animal groups</span></div><div><strong>∞</strong><span>things to discover</span></div><div class="stat-note">Built for curious minds <span>✦</span></div></section>
+
+    <section class="explore-section" id="explore" aria-labelledby="explore-title">
+      <div class="section-heading"><div><p class="eyebrow">The explorer</p><h2 id="explore-title">Where will you wander?</h2></div><p class="section-intro">Start with a creature, a group, or a place. Every guide is a new trail.</p></div>
+      <div class="toolbar"><div class="filter-pills" id="groupFilters" role="group" aria-label="Filter by group"><button class="active" data-group="All">All animals</button><button data-group="Mammals">Mammals</button><button data-group="Birds">Birds</button><button data-group="Reptiles">Reptiles</button><button data-group="Fish">Fish</button><button data-group="Invertebrates">Invertebrates</button></div><label class="sort-control">Sort <select id="sortSelect"><option value="featured">Featured</option><option value="name">A–Z</option><option value="lifespan">Lifespan</option></select></label></div>
+      <div class="animal-grid" id="animalGrid" aria-live="polite"></div><p class="empty-state" id="emptyState" hidden>No animals found. Try a different search or group.</p>
+    </section>
+
+    <section class="groups-section" id="groups" aria-labelledby="groups-title"><div class="section-heading"><div><p class="eyebrow">Classify your curiosity</p><h2 id="groups-title">Choose a family</h2></div><p class="section-intro">From feathered flyers to ocean giants, the animal kingdom is wonderfully varied.</p></div><div class="group-grid" id="groupGrid"></div></section>
+
+    <section class="ani-banner" id="about"><div class="ani-symbol">✦</div><div><p class="eyebrow">Coming into focus</p><h2>Meet ANI, your animal guide.</h2><p>ANI will eventually connect natural-language questions to ANIMOPEDIA's factual animal database. The encyclopedia works perfectly on its own while that intelligent layer grows.</p></div><button class="outline-button" id="openAni2" type="button">Ask a question <span>→</span></button></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#top"><span class="brand-mark">🐾</span><span>ANIMO<span>PEDIA</span></span></a><p>Stay curious. Respect every living thing.</p><small>© 2026 ANIMOPEDIA · A growing guide to the animal kingdom</small></footer>
+
+  <dialog class="animal-dialog" id="animalDialog"><button class="close-button" id="closeDialog" aria-label="Close animal profile">×</button><div id="dialogContent"></div></dialog>
+  <dialog class="ani-dialog" id="aniDialog"><button class="close-button" id="closeAni" aria-label="Close ANI">×</button><div class="ani-dialog-head"><div class="ani-avatar">✦</div><div><p class="eyebrow">ANIMOPEDIA assistant</p><h2>Ask ANI</h2></div></div><p class="ani-note">ANI's database connection is being prepared. For now, try one of these questions to explore the encyclopedia.</p><div class="suggestions"><button data-question="Tell me about elephants">Tell me about elephants</button><button data-question="What animals live in the Arctic?">What animals live in the Arctic?</button><button data-question="Which animals are birds?">Which animals are birds?</button></div><form class="ani-form" id="aniForm"><label class="sr-only" for="aniQuestion">Your question</label><input id="aniQuestion" placeholder="Ask about an animal..." /><button type="submit">Send</button></form><div class="ani-response" id="aniResponse" hidden></div></dialog>
+  <script src="app.js"></script>
+</body>
+</html>
